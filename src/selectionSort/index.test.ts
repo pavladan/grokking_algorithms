@@ -7,4 +7,15 @@ describe("test binary search", () => {
   it("sorting [-1, -6, 7, 2, 0]", () => {
     expect(selectionSort([-1, -6, 7, 2, 0])).toEqual([-6, -1, 0, 2, 7]);
   });
+  it(`sorting ["c", "a", "b"]`, () => {
+    expect(selectionSort(["c", "a", "b", "I", "D", "zet", "x"])).toEqual([
+      "D",
+      "I",
+      "a",
+      "b",
+      "c",
+      "x",
+      "zet",
+    ]);
+  });
 });
