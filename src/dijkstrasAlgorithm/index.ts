@@ -45,7 +45,7 @@ function convertParentsToNodePath(parents: Parents) {
   return nodePath;
 }
 
-export default function search(graph: Graph) {
+export default function dijkstrasAlgorithm(graph: Graph) {
   const processed: string[] = [];
   const parents: Parents = Object.keys(graph[START_KEY]).reduce(
     (acc, curValue) => {
